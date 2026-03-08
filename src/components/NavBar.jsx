@@ -15,7 +15,7 @@ export default function NavBar() {
                 </div>
 
                 <div className="hidden md:flex gap-10">
-                    <a href="/home" className="text-gray-400 text-lg uppercase hover:text-yellow-400 transition-colors border-b-2 border-transparent hover:border-yellow-400 pb-1">
+                    <a href="/" className="text-gray-400 text-lg uppercase hover:text-yellow-400 transition-colors border-b-2 border-transparent hover:border-yellow-400 pb-1">
                         Home
                     </a>
                     <a href="/about" className="text-gray-400 text-lg uppercase hover:text-cyan-400 transition-colors border-b-2 border-transparent hover:border-cyan-400 pb-1">
