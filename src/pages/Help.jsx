@@ -1,4 +1,5 @@
 import img from "../assets/imgs/help.png"
+import { Link } from "react-router"
 
 export default function Help() {
     return (
@@ -58,12 +59,12 @@ export default function Help() {
             </div>
 
             <div className="w-full max-w-4xl">
-                <a 
-                    href="/home" 
+                <Link 
+                    to="/" 
                     className="block w-full bg-cyan-600 hover:bg-cyan-500 text-white text-center py-4 text-2xl font-bold transition-all border-b-4 border-cyan-800 active:border-b-0 active:translate-y-1 uppercase"
                 >
                     ◀ RETURN TO HOME
-                </a>
+                </Link>
             </div>
 
             <footer className="text-gray-500 text-xs py-8">

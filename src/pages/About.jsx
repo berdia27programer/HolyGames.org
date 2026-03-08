@@ -2,6 +2,7 @@ import img from "../assets/imgs/holygames.jpg"
 import game1_1 from "../assets/imgs/solo.png"
 import game2 from "../assets/imgs/danger.png"
 import game3_1 from "../assets/imgs/soloCar.png"
+import { Link } from "react-router"
 
 export default function About() {
     return (
@@ -58,12 +59,12 @@ export default function About() {
             </div>
 
             <footer className="w-full max-w-4xl py-12 flex justify-center">
-                <a 
-                    href="/home" 
+                <Link 
+                    to="/" 
                     className="px-12 py-4 bg-yellow-400 text-black text-2xl font-bold border-b-8 border-yellow-700 active:border-b-0 active:translate-y-2 transition-all uppercase"
                 >
                     Return to the Temple
-                </a>
+                </Link>
             </footer>
         </div>
     )
