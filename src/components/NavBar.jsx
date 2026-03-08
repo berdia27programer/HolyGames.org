@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router"
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,15 +16,15 @@ export default function NavBar() {
                 </div>
 
                 <div className="hidden md:flex gap-10">
-                    <a href="/" className="text-gray-400 text-lg uppercase hover:text-yellow-400 transition-colors border-b-2 border-transparent hover:border-yellow-400 pb-1">
+                    <Link to="/" className="text-gray-400 text-lg uppercase hover:text-yellow-400 transition-colors border-b-2 border-transparent hover:border-yellow-400 pb-1">
                         Home
-                    </a>
-                    <a href="/about" className="text-gray-400 text-lg uppercase hover:text-cyan-400 transition-colors border-b-2 border-transparent hover:border-cyan-400 pb-1">
+                    </Link>
+                    <Link to="/about" className="text-gray-400 text-lg uppercase hover:text-cyan-400 transition-colors border-b-2 border-transparent hover:border-cyan-400 pb-1">
                         About
-                    </a>
-                    <a href="/help" className="text-gray-400 text-lg uppercase hover:text-green-400 transition-colors border-b-2 border-transparent hover:border-green-400 pb-1">
+                    </Link>
+                    <Link to="/help" className="text-gray-400 text-lg uppercase hover:text-green-400 transition-colors border-b-2 border-transparent hover:border-green-400 pb-1">
                         Help
-                    </a>
+                    </Link>
                 </div>
 
                 <button 
@@ -40,15 +41,15 @@ export default function NavBar() {
 
             <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-60 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col gap-4 bg-[#001a41] p-4 rounded-lg border border-yellow-500/30">
-                    <a href="/home" className="text-yellow-400 text-xl uppercase border-b border-yellow-500/20 pb-2">
+                    <Link to="/home" className="text-yellow-400 text-xl uppercase border-b border-yellow-500/20 pb-2">
                         [ Home ]
-                    </a>
-                    <a href="/about" className="text-cyan-400 text-xl uppercase border-b border-cyan-500/20 pb-2">
+                    </Link>
+                    <Link to="/about" className="text-cyan-400 text-xl uppercase border-b border-cyan-500/20 pb-2">
                         [ About ]
-                    </a>
-                    <a href="/help" className="text-green-400 text-xl uppercase pb-2">
+                    </Link>
+                    <Link to="/help" className="text-green-400 text-xl uppercase pb-2">
                         [ Help ]
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
