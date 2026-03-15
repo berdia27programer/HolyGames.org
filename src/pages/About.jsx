@@ -24,8 +24,8 @@ export default function About() {
                     </h2>
                     <p className="text-lg md:text-xl leading-relaxed text-gray-200">
                         In a world of stressful matches and angry losses, <span className="text-white font-bold">HolyGames</span> was forged to be a sanctuary. 
-                        We believe gaming shouldn't raise your heart rate—it should soothe your soul. 
-                        Our algorithm is designed to ensure no two rounds feel the same, keeping the journey fresh and the spirit calm.
+                        I believe gaming shouldn't raise your heart rate—it should soothe your soul. 
+                        My algorithm is designed to ensure no two rounds feel the same, keeping the journey fresh and the spirit calm.
                     </p>
                 </div>
 

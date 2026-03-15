@@ -69,6 +69,7 @@ export default function Help() {
 
             <footer className="text-gray-500 text-xs py-8">
                 <p>DO NOT INTERRUPT THE DIVINE DOWNLOAD PROCESS</p>
+                <p>And also, if you have any problems, you can send an email to berdiabekauri5@gmail.com</p>
             </footer>
         </div>
     )
